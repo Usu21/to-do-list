@@ -1,0 +1,91 @@
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    padding: 20px;
+    background: linear-gradient(rgb(252, 187, 198),rgb(14, 14, 254));
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+ul>li {
+    list-style: none;
+}
+
+.container {
+    max-width: 1070px;
+    margin: 0 auto;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+.add-block {
+    display: flex;
+    justify-content: space-between;
+    overflow: hidden;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.525);
+    flex-basis: 500px;
+    
+}
+
+#taskInput {
+    padding: 10px;
+    border: none;
+    outline: none;
+    font-size: 20px;
+    flex: 1 1 500px;
+}
+
+#taskInput::placeholder {
+    color: rgba(128, 128, 128, 0.384);
+}
+
+#addBtn {}
+
+#list {
+    margin: 0 auto;
+    max-width: 500px;
+}
+
+.item {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    border-radius: 3px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.514);
+    background-color: white;
+}
+
+.item__btns {
+    flex-shrink: 0;
+}
+
+.fa-trash {
+    margin-right: 10px;
+}
+
+.fa-check {
+    margin-right: 20px;
+}
+
+.item.done {
+    text-decoration: line-through;
+}
